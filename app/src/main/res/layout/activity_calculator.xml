@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/etFirstNumber"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
@@ -83,9 +84,9 @@
         app:layout_constraintGuide_percent="0.6" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="59dp"
-        android:layout_height="33dp"
+        android:id="@+id/btnAdding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
@@ -98,8 +99,8 @@
 
     <Button
         android:id="@+id/btnSubstract"
-        android:layout_width="69dp"
-        android:layout_height="31dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="-"
@@ -110,8 +111,8 @@
 
     <Button
         android:id="@+id/btnMultiply"
-        android:layout_width="69dp"
-        android:layout_height="33dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
@@ -125,8 +126,8 @@
 
     <Button
         android:id="@+id/btnModulus"
-        android:layout_width="58dp"
-        android:layout_height="34dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
@@ -148,6 +149,10 @@
         android:id="@+id/tvTotal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
         android:hint="Total"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"

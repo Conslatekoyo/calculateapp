@@ -7,7 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 
 class CalculatorActivity : AppCompatActivity() {
-    lateinit var btnAdd:Button
+    lateinit var btnAdding:Button
     lateinit var btnSubstract:Button
     lateinit var btnMultiply:Button
     lateinit var btnModulus:Button
@@ -17,13 +17,15 @@ class CalculatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
-        btnAdd=findViewById(R.id.btnAdd)
+        btnAdding=findViewById(R.id.btnAdding)
         btnSubstract=findViewById(R.id.btnSubstract)
         btnModulus=findViewById(R.id.btnModulus)
         btnMultiply=findViewById(R.id.btnMultiply)
         tvTotal=findViewById(R.id.tvTotal)
+        etFirstNumber=findViewById(R.id.etFirstNumber)
+        etSecondNumber=findViewById(R.id.etSecondNumber)
 
-        btnAdd.setOnClickListener {
+        btnAdding.setOnClickListener {
             tvTotal.text=""
             val number1=etFirstNumber.text.toString().toDouble()
             val number2=etSecondNumber.text.toString().toDouble()
